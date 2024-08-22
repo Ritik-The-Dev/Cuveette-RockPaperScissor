@@ -132,8 +132,6 @@ let getComputerValue = async () => {
 
 let showResult = (UserValue, ComputerValue) => {
   let Winner = "";
-  console.log(UserValue);
-  console.log(ComputerValue);
   switch (UserValue) {
     case "fist":
       if (ComputerValue === "fist") {
