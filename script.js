@@ -169,6 +169,7 @@ let showResult = (UserValue, ComputerValue) => {
     yourAura.classList.remove("hidden");
     nextBtn.classList.remove("hidden");
     whoWin.innerText = "YOU WIN";
+    Against.classList.remove("hidden");
     MyScore += 1;
     localStorage.setItem("MyScore", MyScore);
     yourScore.innerHTML = MyScore;
@@ -177,6 +178,7 @@ let showResult = (UserValue, ComputerValue) => {
     yourAura.classList.add("hidden");
     pcAura.classList.remove("hidden");
     nextBtn.classList.add("hidden");
+    Against.classList.remove("hidden");
     whoWin.innerText = "PC WIN";
     ComputerScore += 1;
     localStorage.setItem("ComputerScore", ComputerScore);
@@ -186,6 +188,7 @@ let showResult = (UserValue, ComputerValue) => {
     yourAura.classList.add("hidden");
     pcAura.classList.add("hidden");
     nextBtn.classList.add("hidden");
+    Against.classList.remove("hidden");
     whoWin.innerText = "TIE";
   }
 };
